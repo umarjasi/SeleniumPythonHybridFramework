@@ -1,0 +1,148 @@
+{
+  "uid" : "b5d02f42e251b674",
+  "name" : "test_search_without_providing_any_product",
+  "fullName" : "tests.test_Search.TestSearch#test_search_without_providing_any_product",
+  "historyId" : "5d37ea5fc5916146fd51ef3ddd636579",
+  "time" : {
+    "start" : 1719823404006,
+    "stop" : 1719823404660,
+    "duration" : 654
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False\n +  where False = <method-wrapper '__eq__' of str object at 0x0000024D76D324F0>('There is no 123 product that matches the search criteria.')\n +    where <method-wrapper '__eq__' of str object at 0x0000024D76D324F0> = 'There is no product that matches the search criteria.'.__eq__\n +      where 'There is no product that matches the search criteria.' = <bound method SearchPage.retrieving_no_product_message of <PageObjects.SearchPage.SearchPage object at 0x0000024D76E521A0>>()\n +        where <bound method SearchPage.retrieving_no_product_message of <PageObjects.SearchPage.SearchPage object at 0x0000024D76E521A0>> = <PageObjects.SearchPage.SearchPage object at 0x0000024D76E521A0>.retrieving_no_product_message",
+  "statusTrace" : "self = <tests.test_Search.TestSearch object at 0x0000024D76DCE860>\n\n    def test_search_without_providing_any_product(self):\n        home_page = HomePage(self.driver)\n        search_page = home_page.search_for_a_product(\"\")\n        expected_text = \"There is no 123 product that matches the search criteria.\"\n>       assert search_page.retrieving_no_product_message().__eq__(expected_text)\nE       AssertionError: assert False\nE        +  where False = <method-wrapper '__eq__' of str object at 0x0000024D76D324F0>('There is no 123 product that matches the search criteria.')\nE        +    where <method-wrapper '__eq__' of str object at 0x0000024D76D324F0> = 'There is no product that matches the search criteria.'.__eq__\nE        +      where 'There is no product that matches the search criteria.' = <bound method SearchPage.retrieving_no_product_message of <PageObjects.SearchPage.SearchPage object at 0x0000024D76E521A0>>()\nE        +        where <bound method SearchPage.retrieving_no_product_message of <PageObjects.SearchPage.SearchPage object at 0x0000024D76E521A0>> = <PageObjects.SearchPage.SearchPage object at 0x0000024D76E521A0>.retrieving_no_product_message\n\ntests\\test_Search.py:22: AssertionError",
+  "flaky" : true,
+  "beforeStages" : [ {
+    "name" : "setup_and_teardown",
+    "time" : {
+      "start" : 1719823389417,
+      "stop" : 1719823404000,
+      "duration" : 14583
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "log_on_failure",
+    "time" : {
+      "start" : 1719823404002,
+      "stop" : 1719823404002,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "setup_and_teardown::0",
+    "time" : {
+      "start" : 1719823404948,
+      "stop" : 1719823408038,
+      "duration" : 3090
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "log_on_failure::0",
+    "time" : {
+      "start" : 1719823404846,
+      "stop" : 1719823404948,
+      "duration" : 102
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "60b2c3f71e101",
+      "name" : "failed_test",
+      "source" : "60b2c3f71e101.png",
+      "type" : "image/png",
+      "size" : 46085
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_Search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSearch"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-OVP0SQ7"
+  }, {
+    "name" : "thread",
+    "value" : "9848-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_Search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6f9eea9d81c142f5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <method-wrapper '__eq__' of str object at 0x000002A450A6E8E0>('There is no 123 product that matches the search criteria.')\n +    where <method-wrapper '__eq__' of str object at 0x000002A450A6E8E0> = 'There is no product that matches the search criteria.'.__eq__\n +      where 'There is no product that matches the search criteria.' = <bound method SearchPage.retrieving_no_product_message of <PageObjects.SearchPage.SearchPage object at 0x000002A450B90CD0>>()\n +        where <bound method SearchPage.retrieving_no_product_message of <PageObjects.SearchPage.SearchPage object at 0x000002A450B90CD0>> = <PageObjects.SearchPage.SearchPage object at 0x000002A450B90CD0>.retrieving_no_product_message",
+      "time" : {
+        "start" : 1719821581467,
+        "stop" : 1719821582685,
+        "duration" : 1218
+      }
+    }, {
+      "uid" : "ce792e579f49c7b7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <method-wrapper '__eq__' of str object at 0x0000021191EE3910>('There is no 123 product that matches the search criteria.')\n +    where <method-wrapper '__eq__' of str object at 0x0000021191EE3910> = 'There is no product that matches the search criteria.'.__eq__\n +      where 'There is no product that matches the search criteria.' = <bound method SearchPage.retrieving_no_product_message of <PageObjects.SearchPage.SearchPage object at 0x0000021191FBE8C0>>()\n +        where <bound method SearchPage.retrieving_no_product_message of <PageObjects.SearchPage.SearchPage object at 0x0000021191FBE8C0>> = <PageObjects.SearchPage.SearchPage object at 0x0000021191FBE8C0>.retrieving_no_product_message",
+      "time" : {
+        "start" : 1719644181737,
+        "stop" : 1719644182311,
+        "duration" : 574
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')" ]
+  },
+  "source" : "b5d02f42e251b674.json",
+  "parameterValues" : [ ]
+}
